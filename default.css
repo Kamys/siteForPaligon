@@ -135,7 +135,7 @@ hr {
     height: 220px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background:url(images/fon5.jpg) no-repeat 5px 0px;
+    background: #1e1f23 url(images/fon5.png) no-repeat 5px 0px;
 }
 
 #login_2 {
