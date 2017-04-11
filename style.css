@@ -137,27 +137,27 @@ hr {
     background: #1777B1 url(images/img05.png) no-repeat 5px 0px;
 }
 
-#login_2 {
+#login_div {
     float: right;
     width: 345px;
     height: 220px;
     background: #3FD9EC url(images/img06.jpg) no-repeat;
 }
 
-#login_2 h1, #login_2 h2 {
+#login_div h1, #login_div h2 {
     text-align: center;
 }
 
-#login_2 h1 {
+#login_div h1 {
     padding-top: 77px;
     font-size: 240%;
 }
 
-#login_2 h2 {
+#login_div h2 {
     font-size: 150%;
 }
 
-#login_2 a {
+#login_div a {
     text-decoration: none;
     color: #144B6B;
 }
