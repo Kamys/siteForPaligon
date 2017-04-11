@@ -1,11 +1,11 @@
 body {
-	margin: 0;
-	padding: 0;
-	background: #000 url(images/fon5.jpg) repeat-x;
-	background-size: cover;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 19px;
-	color: #E6F6FF;
+    margin: 0;
+    padding: 0;
+    background: #000 url(images/fon5.jpg) repeat-x;
+    background-size: cover;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #E6F6FF;
 }
 
 h1, h2, h3 {
@@ -84,6 +84,20 @@ hr {
     display: none;
 }
 
+footer {
+    width: 740px;
+    margin: 0 auto;
+    height: 30px;
+    padding: 10px;
+    background: #3a3c3b;
+}
+
+footer p {
+    margin: 0;
+    line-height: normal;
+    font-size: 85%;
+}
+
 #menu {
     width: 760px;
     height: 80px;
@@ -138,7 +152,7 @@ hr {
     background:url(images/fon5.jpg) no-repeat 5px 0px;
 }
 
-#login_2 {
+#login_div {
     float: right;
     width: 345px;
     height: 220px;
@@ -146,21 +160,22 @@ hr {
     background: url(images/fon5.jpg) no-repeat;
 }
 
-#login_2 h1, #login_2 h2 {
+#login_div h1, #login_div h2 {
     text-align: center;
 }
 
-#login_2 h1 {
+#login_div h1 {
     padding-top: 77px;
     font-size: 240%;
 }
 
-#login_2 h2 {
+#login_div h2 {
     font-size: 150%;
 }
 
-#login_2 a {
+#login_div a {
     text-decoration: none;
+    font-size: 16px
 }
 
 #page {
@@ -259,18 +274,4 @@ hr {
 
 #search_input {
     width: 180px;
-}
-
-footer {
-    width: 740px;
-    margin: 0 auto;
-    height: 30px;
-    padding: 10px;
-    background: #3a3c3b;
-}
-
-footer p {
-    margin: 0;
-    line-height: normal;
-    font-size: 85%;
 }
