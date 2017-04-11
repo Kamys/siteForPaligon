@@ -103,7 +103,7 @@ footer p {
     height: 80px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: url(images/fon5.jpg) no-repeat;
+    
 }
 
 #menu ul {
@@ -149,15 +149,14 @@ footer p {
     height: 220px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1e1f23 url(images/fon5.png) no-repeat 5px 0px;
-}
+   }
 
 #login_div {
     float: right;
     width: 345px;
     height: 220px;
     padding: 0 5px 5px 5px;
-    background: url(images/fon5.jpg) no-repeat;
+    
 }
 
 #login_div h1, #login_div h2 {
