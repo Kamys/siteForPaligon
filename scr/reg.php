@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Title</title>
 </head>
 <body>
 <?php
-
+include "data_base_helper.php";
 $reg_successfully = false;
 $error_messages_name = "Имя не прошло проверку!";
 $error_messages_password = "Пароль не прошол проверку!";
@@ -20,16 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$post_handler->check_user_password())
         failed_reg($error_messages_password);
 
-    $data_base = data_base_helper();
-    $data_base.add_new_user();
-
 }
 
+$data_base = new data_base_helper();
+$data_base->add_new_user("Никита", "00934п");
 function failed_reg($error_messages = "Причина не известна.")
 {
     echo "Регистрация не успешна." . $error_messages;
 }
 
+echo "Привет";
 ?>
 </body>
 </html>
