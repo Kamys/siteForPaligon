@@ -89,7 +89,7 @@ hr {
     height: 80px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1e1f23;
+    background: url(images/fon5.jpg) no-repeat;
 }
 
 #menu ul {
@@ -135,17 +135,15 @@ hr {
     height: 220px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1e1f23 url(images/img05.png) no-repeat 5px 0px;
+    background:url(images/fon5.jpg) no-repeat 5px 0px;
 }
 
 #login_2 {
     float: right;
     width: 345px;
     height: 220px;
-
     padding: 0 5px 5px 5px;
-    background: #3FD9EC url(images/img06.jpg) no-repeat;
-
+    background: url(images/fon5.jpg) no-repeat;
 }
 
 #login_2 h1, #login_2 h2 {
