@@ -1,7 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #000 url(images/fon05.jpg) repeat-x;
+	background: #000 url(images/fon5.jpg) repeat-x;
+	background-size: cover;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #E6F6FF;
@@ -88,7 +89,7 @@ hr {
     height: 80px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1777B1;
+    background: #1e1f23;
 }
 
 #menu ul {
@@ -134,14 +135,14 @@ hr {
     height: 220px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1777B1 url(images/img05.png) no-repeat 5px 0px;
+    background: #1e1f23 url(images/img05.png) no-repeat 5px 0px;
 }
 
 #logo {
     float: right;
     width: 345px;
     height: 220px;
-    background: #3FD9EC url(images/img06.jpg) no-repeat;
+    background: #1e1f23 url(images/img06.jpg) no-repeat;
 }
 
 #logo h1, #logo h2 {
