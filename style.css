@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000 url(images/fon5.jpg) repeat-x;
+    background-size: cover;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #E6F6FF;
+}
