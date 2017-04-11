@@ -1,10 +1,11 @@
 body {
-	margin: 0;
-	padding: 0;
-	background: #000 url(images/fon05.jpg) repeat-x;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #E6F6FF;
+    margin: 0;
+    padding: 0;
+    background: #000 url(images/fon5.jpg) repeat-x;
+    background-size: cover;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #E6F6FF;
 }
 
 h1, h2, h3 {
@@ -83,12 +84,26 @@ hr {
     display: none;
 }
 
+footer {
+    width: 740px;
+    margin: 0 auto;
+    height: 30px;
+    padding: 10px;
+    background: #3a3c3b;
+}
+
+footer p {
+    margin: 0;
+    line-height: normal;
+    font-size: 85%;
+}
+
 #menu {
     width: 760px;
     height: 80px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1777B1;
+    background: url(images/fon5.jpg) no-repeat;
 }
 
 #menu ul {
@@ -123,25 +138,26 @@ hr {
     color: #005826;
 }
 
-#menu .active a {
+#menu .menu a {
     background: #A8DC35 url(images/img03.gif) no-repeat;
     border: none;
     color: #E80732;
 }
 
-#header {
+#login {
     width: 760px;
     height: 220px;
     margin: 0 auto;
     padding: 0 5px 5px 5px;
-    background: #1777B1 url(images/img05.png) no-repeat 5px 0px;
+    background: #1e1f23 url(images/fon5.png) no-repeat 5px 0px;
 }
 
 #login_div {
     float: right;
     width: 345px;
     height: 220px;
-    background: #3FD9EC url(images/img06.jpg) no-repeat;
+    padding: 0 5px 5px 5px;
+    background: url(images/fon5.jpg) no-repeat;
 }
 
 #login_div h1, #login_div h2 {
@@ -159,7 +175,7 @@ hr {
 
 #login_div a {
     text-decoration: none;
-    color: #144B6B;
+    font-size: 16px
 }
 
 #page {
@@ -207,7 +223,7 @@ hr {
     background: #3FD9EC url(images/img06.jpg) no-repeat;
     text-transform: uppercase;
     font-size: 136%;
-    color: #144B6B;
+    color: #e6f6f7;
 }
 
 .boxed .content {
@@ -258,18 +274,4 @@ hr {
 
 #search_input {
     width: 180px;
-}
-
-footer {
-    width: 740px;
-    margin: 0 auto;
-    height: 30px;
-    padding: 10px;
-    background: #3a3c3b;
-}
-
-footer p {
-    margin: 0;
-    line-height: normal;
-    font-size: 85%;
 }
