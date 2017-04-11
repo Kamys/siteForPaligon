@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #135463 url(images/img06.gif) repeat-x;
+	background: #000 url(images/fon04.jpg) repeat-x;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #E6F6FF;
@@ -68,6 +68,7 @@ img.right {
 hr {
 	display: none;
 }
+
 #menu {
 	width: 760px;
 	height: 80px;
