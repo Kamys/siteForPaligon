@@ -144,8 +144,6 @@ hr {
 	width: 375px;
 	padding-top: 8px;
 }
-.columns {
-}
 .columns .title {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #4AF4FE;
@@ -159,16 +157,12 @@ hr {
 .columns .columns_2 {
 	float: right;
 }
-.columns ul {
-}
 .columns ul li {
 	padding-left: 0;
 }
 #sidebar {
 	float: right;
 	width: 310px;
-}
-.boxed {
 }
 .boxed .title {
 	height: 33px;
@@ -218,25 +212,15 @@ hr {
 #search_input {
 	width: 180px;
 }
-#search_submit {
-}
-#footer {
+footer {
 	width: 740px;
 	margin: 0 auto;
 	height: 30px;
 	padding: 10px;
 	background: #1777B1;
 }
-#footer p {
+footer p {
 	margin: 0;
 	line-height: normal;
 	font-size: 85%;
-}
-#footer a {
-}
-#legal {
-	float: left;
-}
-#links {
-	float: right;
 }
