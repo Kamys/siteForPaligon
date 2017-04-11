@@ -144,24 +144,24 @@ hr {
 	width: 375px;
 	padding-top: 8px;
 }
-.twocols {
+.columns {
 }
-.twocols .title {
+.columns .title {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #4AF4FE;
 }
-.twocols .col1, .twocols .col2 {
+.columns .columns_1, .columns .columns_2 {
 	width: 175px;
 }
-.twocols .col1 {
+.columns .columns_1 {
 	float: left;
 }
-.twocols .col2 {
+.columns .columns_2 {
 	float: right;
 }
-.twocols ul {
+.columns ul {
 }
-.twocols ul li {
+.columns ul li {
 	padding-left: 0;
 }
 #sidebar {
@@ -215,10 +215,10 @@ hr {
 	margin: 0;
 	font-size: 85%;
 }
-#searchinput {
+#search_input {
 	width: 180px;
 }
-#searchsubmit {
+#search_submit {
 }
 #footer {
 	width: 740px;
