@@ -52,6 +52,6 @@ function logging($messages, $args)
 }
 
 ?>
-<a href="../html/admin.html">На главную</a>
+<a href="../index.html">На главную</a>
 </body>
 </html>
