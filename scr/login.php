@@ -1,11 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+</head>
+<body>
 <?php
 include "data_base_helper.php";
 include "post_handler.php";
 
-logging('POST', $_POST);
-logging('GET', $_GET);
+/*logging('POST', $_POST);
+logging('GET', $_GET);*/
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    echo "This post<br>"; //DELETE IT
     $post_handler = new post_handler();
 
     $check_user_password = $post_handler->check_user_password();
@@ -27,12 +33,12 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
 function successfully_login()
 {
-    echo "Вход выполнен успешно.";
+    echo "Вход выполнен успешно.<br>";
 }
 
 function failed_login()
 {
-    echo "Вход не выполнен.";
+    echo "Вход не выполнен.<br>";
 }
 
 function logging($messages, $args)
@@ -43,3 +49,6 @@ function logging($messages, $args)
 }
 
 ?>
+<a href="../index.html">На главную</a>
+</body>
+</html>

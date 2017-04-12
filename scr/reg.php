@@ -9,10 +9,9 @@
 include "data_base_helper.php";
 include "post_handler.php";
 
-logging('POST', $_POST);
-logging('GET', $_GET);
+/*logging('POST', $_POST);
+logging('GET', $_GET);*/
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    echo "This post<br>"; //DELETE IT
     $post_handler = new post_handler();
 
     $check_user_password = $post_handler->check_user_password();
@@ -36,7 +35,7 @@ function failed_reg($error_messages = "Причина не известна.")
 }
 
 function successfully_reg(){
-    echo "Регистрация успешна!!!!";
+    echo "Регистрация успешна!!!!<br>";
 }
 
 function logging($messages, $args)
@@ -47,5 +46,6 @@ function logging($messages, $args)
 }
 
 ?>
+<a href="../index.html">На главную</a>
 </body>
 </html>
