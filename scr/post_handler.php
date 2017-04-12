@@ -18,21 +18,21 @@ class post_handler
 
     function get_user_name(): string
     {
-        return $_POST[$this->param_user_name];
+        return $_GET[$this->param_user_name];
     }
 
     function get_user_password(): string
     {
-        return $_POST[$this->param_user_password];
+        return $_GET[$this->param_user_password];
     }
 
     function check_user_name(): bool
     {
-        return array_key_exists($this->param_user_name, $_POST);
+        return array_key_exists($this->param_user_name, $_GET);
     }
 
     function check_user_password(): bool
     {
-        return array_key_exists($this->param_user_password, $_POST);
+        return array_key_exists($this->param_user_password, $_GET);
     }
 }

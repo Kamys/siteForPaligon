@@ -14,22 +14,32 @@ $error_messages_password = "Пароль не прошол проверку!";
 
 logging('POST', $_POST);
 logging('GET', $_GET);
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    echo "This post<br>";
     $post_handler = new post_handler();
 
-    if (!$post_handler->check_user_name())
-        failed_reg($error_messages_name);
+    $check_user_password = $post_handler->check_user_password();
+    $check_user_name = $post_handler->check_user_name();
+    if ($check_user_name and $check_user_password) {
+        $data_base = new data_base_helper();
 
-    if (!$post_handler->check_user_password())
-        failed_reg($error_messages_password);
+        $user_name = $post_handler->get_user_name();
+        $user_password = $post_handler->get_user_password();
+        $data_base->add_new_user($user_name, $user_password);
+        successfully_reg();
+    } else {
+        failed_reg();
+    }
+
 
 }
-
-$data_base = new data_base_helper();
-$data_base->add_new_user("Никита", "00934п");
 function failed_reg($error_messages = "Причина не известна.")
 {
     echo "Регистрация не успешна." . $error_messages;
+}
+
+function successfully_reg(){
+    echo "Регистрация успешна!!!!";
 }
 
 function logging($messages, $args)
@@ -38,6 +48,7 @@ function logging($messages, $args)
     print_r($args);
     echo "<br>";
 }
+
 ?>
 </body>
 </html>
