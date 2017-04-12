@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Title</title>
-</head>
-<body>
 <?php
 include "data_base_helper.php";
 include "post_handler.php";
@@ -22,21 +15,24 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
         $user_name = $post_handler->get_user_name();
         $user_password = $post_handler->get_user_password();
-        $data_base->add_new_user($user_name, $user_password);
-        successfully_reg();
+        if ($data_base->check_exits_user($user_name, $user_password)) {
+            successfully_login();
+        } else {
+            failed_login();
+        }
     } else {
-        failed_reg();
+        failed_login();
     }
-
-
 }
-function failed_reg($error_messages = "Причина не известна.")
+
+function successfully_login()
 {
-    echo "Регистрация не успешна." . $error_messages;
+    echo "Вход выполнен успешно.";
 }
 
-function successfully_reg(){
-    echo "Регистрация успешна!!!!";
+function failed_login()
+{
+    echo "Вход не выполнен.";
 }
 
 function logging($messages, $args)
@@ -47,5 +43,3 @@ function logging($messages, $args)
 }
 
 ?>
-</body>
-</html>
