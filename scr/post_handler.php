@@ -15,6 +15,10 @@ class post_handler
      * @var string
      */
     private $param_user_password = "user_password";
+    /**
+     * @var string
+     */
+    private $param_user_email = "user_email";
 
     function get_user_name(): string
     {
@@ -26,6 +30,8 @@ class post_handler
         return $_GET[$this->param_user_password];
     }
 
+
+
     function check_user_name(): bool
     {
         return array_key_exists($this->param_user_name, $_GET);
@@ -35,4 +41,15 @@ class post_handler
     {
         return array_key_exists($this->param_user_password, $_GET);
     }
+
+/*    function check_user_email(): bool
+    {
+        return array_key_exists($this->param_user_email, $_GET);
+    }
+
+    function get_user_email(): string
+    {
+        return $_GET[$this->param_user_email];
+    }
+*/
 }
