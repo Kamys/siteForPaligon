@@ -23,6 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $user_password = $post_handler->get_user_password();
         if ($data_base->check_exits_user($user_name, $user_password)) {
             successfully_login();
+            if($user_name == "admin"){
+                echo "<a href=\"../html/admin.html\">Панель администратора</a><br>";
+            }
         } else {
             failed_login();
         }
@@ -49,6 +52,6 @@ function logging($messages, $args)
 }
 
 ?>
-<a href="../index.html">На главную</a>
+<a href="../html/admin.html">На главную</a>
 </body>
 </html>
