@@ -366,3 +366,80 @@ form p {
     display: block;
     margin-top: 0em;
     color: #000000
+}
+.slider {
+    
+}
+
+.slider input[type="radio"] {
+    display: none;
+}
+
+
+.slider-controls {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.slider-controls label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid gray;
+    margin: 0 3px;
+    border-radius: 50%;
+    background-color: #d3ccb6; 
+    cursor: pointer;
+}
+
+.slider img {
+    float: left;
+    height: 270px;
+    width: 365px;
+     
+    
+}
+.slider-slides {
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-delay: 3.5s;
+    width: 500%;
+    transition: transform 1.5s ease;
+}
+
+.slider-inner {
+    overflow: hidden;
+    
+}
+.slider-inner  > img{
+    width: 375px;
+    height: 270px;  
+}
+ 
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"],
+#btn-4:checked ~ .slider-controls label[for="btn-4"],
+#btn-5:checked ~ .slider-controls label[for="btn-5"] {
+    background-color: yellow;
+}   
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translateX(0);
+}
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translateX(-375px);
+}
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translateX(-750px);
+}
+#btn-4:checked ~ .slider-inner .slider-slides {
+    transform: translateX(-1125px);
+}
+#btn-5:checked ~ .slider-inner .slider-slides {
+    transform: translateX(-1500px);
+}
+
+@keyframes slider {
+    50% {transform: translateX(-1500px);}
+}
