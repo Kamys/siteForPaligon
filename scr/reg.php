@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $data_base = new data_base_helper();
 
         $user_name = $post_handler->get_user_name();
-        $user_password = $post_handler->get_user_password();
+        $user_password = $post_handler->get_user_password();;
         $data_base->add_new_user($user_name, $user_password);
         successfully_reg();
     } else {
