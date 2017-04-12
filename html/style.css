@@ -362,3 +362,7 @@ img {
     color: #fff;
     text-shadow: 2px 2px 3px #222;
 }
+form p {
+    display: block;
+    margin-top: 0em;
+    color: #000000
